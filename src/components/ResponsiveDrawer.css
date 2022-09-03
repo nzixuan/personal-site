@@ -1,0 +1,12 @@
+.link-dot {
+    opacity: 0 ;
+    transition: opacity 300ms linear;
+}
+.link-dot.link-dot-active{
+    opacity: 1 ;
+}
+
+
+.link-title:hover .link-dot {
+    opacity: 1;
+}
