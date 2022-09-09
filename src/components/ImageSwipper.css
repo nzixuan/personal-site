@@ -1,0 +1,15 @@
+.MuiMobileStepper-dot	{
+    background-color: grey !important;
+
+}
+
+.MuiMobileStepper-dotActive	{
+    background-color: white !important;
+}
+
+.MuiButtonBase-root:disabled {
+color: grey !important;
+ }
+.MuiButtonBase-root {
+    color: white !important;
+}
