@@ -6,12 +6,15 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
+import Education from './components/Education';
+import Experience from './components/Experience';
 import Home from './components/Home';
+import Projects from './components/Projects';
 import ResponsiveDrawer from './components/ResponsiveDrawer';
-import Roboto from'@fontsource/roboto'
 import TopBar from './components/TopBar';
 import { Typography } from '@mui/material';
-import { sections } from './sections';
+import asap from "@fontsource/asap-condensed";
+import { sections } from './data/sections';
 
 const drawerWidth = 150;
 
@@ -27,14 +30,17 @@ function App(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  // 282c34
+  // const bcolour ="#202124"
+  const bcolour ="#202124"
 
   const theme = createTheme({
     palette: {
-      primary: {main: "#282c34"},
-      divider: "#282c34",
+      primary: {main: bcolour},
+      divider: bcolour,
       background: {
-        default: "#282c34",
-        paper: "#282c34",
+        default: bcolour,
+        paper: bcolour,
       },
       text: {
         primary: '#fff',
@@ -44,6 +50,7 @@ function App(props) {
     },
     typography: {
       fontFamily: [
+        'Asap Condensed',
         'Roboto',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -72,69 +79,23 @@ function App(props) {
         id={sections[0].id}
         ref={sectionRefs.current[0]}
       >
-        <section  >
-        <Typography sx={{color:sections[0].color}} variant='h3'>{sections[0].text}</Typography>
+        <section>
           <Home></Home>
         </section>
          <section id={sections[1].id} ref={sectionRefs.current[1]}>
-          <Typography sx={{color:sections[1].color}} variant='h3'>{sections[1].text}</Typography>
-          <h2> 
-
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed viverra ex. Maecenas at dui faucibus, accumsan arcu quis, aliquam ipsum. Donec venenatis eros nec aliquet finibus. Nulla ut euismod tellus. Pellentesque ultricies libero at sodales vulputate. Maecenas eget nibh ex. Morbi aliquam vel purus ut vulputate. In placerat, arcu at suscipit fermentum, ligula arcu cursus arcu, quis elementum tortor nisl sed est. Sed dolor quam, tincidunt varius tellus in, mattis ultrices velit. Vestibulum consectetur nibh sed sem feugiat commodo.
-
-Fusce finibus sem non sapien ultricies egestas. Curabitur sed nibh non justo placerat auctor vitae non mauris. Nunc aliquam non nisi in maximus. Proin in purus et lorem fermentum egestas aliquet a neque. Nam rutrum sodales sapien eu ornare. Quisque nunc urna, molestie a lacus sed, mattis dapibus metus. Proin sollicitudin odio in pretium convallis. Quisque ultrices cursus est ac tempor.
-
-In elementum, ex et efficitur ullamcorper, mi felis scelerisque massa, vitae dapibus nulla neque a enim. Nam eu tincidunt massa, porta luctus est. Morbi eu ante id nulla pretium maximus blandit non nibh. Etiam volutpat pretium quam, ac mattis diam mollis sit amet. In nec tincidunt lectus, nec dictum orci. Quisque dolor sapien, consequat in sapien non, semper venenatis mi. Sed sit amet lacus condimentum, malesuada ligula a, facilisis odio. Nulla non tortor tincidunt, bibendum tortor a, vehicula orci. Quisque eget molestie nulla, ac condimentum velit. Aliquam imperdiet metus id urna consectetur maximus. Nulla dapibus nunc dolor, vitae scelerisque mi vulputate vitae. Curabitur nec lectus nec augue laoreet vulputate ut in sapien. Aenean eu urna in nunc malesuada venenatis sed at arcu.
-
-Proin accumsan justo ligula, a consectetur risus pharetra nec. Nulla scelerisque non turpis in efficitur. Integer porta, ipsum sit amet sodales vulputate, odio ipsum tempor urna, vel tincidunt metus leo et metus. Aliquam posuere ante id ante pharetra, ut dignissim augue finibus. Fusce malesuada lorem eget nisi tempus, nec tincidunt eros euismod. Vivamus pulvinar bibendum purus quis commodo. Curabitur mattis malesuada purus et euismod. Vivamus viverra ultrices lorem a imperdiet. Nullam condimentum est nec libero imperdiet laoreet. Nam non risus massa. Nam eros orci, bibendum ac pharetra a, semper eu enim. Donec est mauris, pulvinar quis cursus quis, pharetra at odio. Praesent luctus enim urna, nec lacinia tortor mollis sed.
-
-
-          </h2>
+        <Projects></Projects>
         </section>
         <section id={sections[2].id} ref={sectionRefs.current[2]}>
-        <Typography sx={{color:sections[2].color}} variant='h3'>{sections[2].text}</Typography>
-          <h2> 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed viverra ex. Maecenas at dui faucibus, accumsan arcu quis, aliquam ipsum. Donec venenatis eros nec aliquet finibus. Nulla ut euismod tellus. Pellentesque ultricies libero at sodales vulputate. Maecenas eget nibh ex. Morbi aliquam vel purus ut vulputate. In placerat, arcu at suscipit fermentum, ligula arcu cursus arcu, quis elementum tortor nisl sed est. Sed dolor quam, tincidunt varius tellus in, mattis ultrices velit. Vestibulum consectetur nibh sed sem feugiat commodo.
-
-Fusce finibus sem non sapien ultricies egestas. Curabitur sed nibh non justo placerat auctor vitae non mauris. Nunc aliquam non nisi in maximus. Proin in purus et lorem fermentum egestas aliquet a neque. Nam rutrum sodales sapien eu ornare. Quisque nunc urna, molestie a lacus sed, mattis dapibus metus. Proin sollicitudin odio in pretium convallis. Quisque ultrices cursus est ac tempor.
-
-In elementum, ex et efficitur ullamcorper, mi felis scelerisque massa, vitae dapibus nulla neque a enim. Nam eu tincidunt massa, porta luctus est. Morbi eu ante id nulla pretium maximus blandit non nibh. Etiam volutpat pretium quam, ac mattis diam mollis sit amet. In nec tincidunt lectus, nec dictum orci. Quisque dolor sapien, consequat in sapien non, semper venenatis mi. Sed sit amet lacus condimentum, malesuada ligula a, facilisis odio. Nulla non tortor tincidunt, bibendum tortor a, vehicula orci. Quisque eget molestie nulla, ac condimentum velit. Aliquam imperdiet metus id urna consectetur maximus. Nulla dapibus nunc dolor, vitae scelerisque mi vulputate vitae. Curabitur nec lectus nec augue laoreet vulputate ut in sapien. Aenean eu urna in nunc malesuada venenatis sed at arcu.
-
-Proin accumsan justo ligula, a consectetur risus pharetra nec. Nulla scelerisque non turpis in efficitur. Integer porta, ipsum sit amet sodales vulputate, odio ipsum tempor urna, vel tincidunt metus leo et metus. Aliquam posuere ante id ante pharetra, ut dignissim augue finibus. Fusce malesuada lorem eget nisi tempus, nec tincidunt eros euismod. Vivamus pulvinar bibendum purus quis commodo. Curabitur mattis malesuada purus et euismod. Vivamus viverra ultrices lorem a imperdiet. Nullam condimentum est nec libero imperdiet laoreet. Nam non risus massa. Nam eros orci, bibendum ac pharetra a, semper eu enim. Donec est mauris, pulvinar quis cursus quis, pharetra at odio. Praesent luctus enim urna, nec lacinia tortor mollis sed.
-
-
-</h2>
+        <Typography sx={{color:"white", pr:4, textDecoration:"underline"}} variant='h3'>{sections[2].text}</Typography>
+          <Experience></Experience>
         </section>
         <section id={sections[3].id} ref={sectionRefs.current[3]}>
-        <Typography sx={{color:sections[3].color}} variant='h3'>{sections[3].text}</Typography>
-          <h2> 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed viverra ex. Maecenas at dui faucibus, accumsan arcu quis, aliquam ipsum. Donec venenatis eros nec aliquet finibus. Nulla ut euismod tellus. Pellentesque ultricies libero at sodales vulputate. Maecenas eget nibh ex. Morbi aliquam vel purus ut vulputate. In placerat, arcu at suscipit fermentum, ligula arcu cursus arcu, quis elementum tortor nisl sed est. Sed dolor quam, tincidunt varius tellus in, mattis ultrices velit. Vestibulum consectetur nibh sed sem feugiat commodo.
-
-Fusce finibus sem non sapien ultricies egestas. Curabitur sed nibh non justo placerat auctor vitae non mauris. Nunc aliquam non nisi in maximus. Proin in purus et lorem fermentum egestas aliquet a neque. Nam rutrum sodales sapien eu ornare. Quisque nunc urna, molestie a lacus sed, mattis dapibus metus. Proin sollicitudin odio in pretium convallis. Quisque ultrices cursus est ac tempor.
-
-In elementum, ex et efficitur ullamcorper, mi felis scelerisque massa, vitae dapibus nulla neque a enim. Nam eu tincidunt massa, porta luctus est. Morbi eu ante id nulla pretium maximus blandit non nibh. Etiam volutpat pretium quam, ac mattis diam mollis sit amet. In nec tincidunt lectus, nec dictum orci. Quisque dolor sapien, consequat in sapien non, semper venenatis mi. Sed sit amet lacus condimentum, malesuada ligula a, facilisis odio. Nulla non tortor tincidunt, bibendum tortor a, vehicula orci. Quisque eget molestie nulla, ac condimentum velit. Aliquam imperdiet metus id urna consectetur maximus. Nulla dapibus nunc dolor, vitae scelerisque mi vulputate vitae. Curabitur nec lectus nec augue laoreet vulputate ut in sapien. Aenean eu urna in nunc malesuada venenatis sed at arcu.
-
-Proin accumsan justo ligula, a consectetur risus pharetra nec. Nulla scelerisque non turpis in efficitur. Integer porta, ipsum sit amet sodales vulputate, odio ipsum tempor urna, vel tincidunt metus leo et metus. Aliquam posuere ante id ante pharetra, ut dignissim augue finibus. Fusce malesuada lorem eget nisi tempus, nec tincidunt eros euismod. Vivamus pulvinar bibendum purus quis commodo. Curabitur mattis malesuada purus et euismod. Vivamus viverra ultrices lorem a imperdiet. Nullam condimentum est nec libero imperdiet laoreet. Nam non risus massa. Nam eros orci, bibendum ac pharetra a, semper eu enim. Donec est mauris, pulvinar quis cursus quis, pharetra at odio. Praesent luctus enim urna, nec lacinia tortor mollis sed.
-
-
-</h2>
+        <Typography sx={{color:"white", pr:4, textDecoration:"underline"}} variant='h3'>{sections[3].text}</Typography>
+          <Education></Education>
         </section>
         <section id={sections[4].id} ref={sectionRefs.current[4]}>
-        <Typography sx={{color:sections[4].color}} variant='h3'>{sections[4].text}</Typography>
-          <h2> 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed viverra ex. Maecenas at dui faucibus, accumsan arcu quis, aliquam ipsum. Donec venenatis eros nec aliquet finibus. Nulla ut euismod tellus. Pellentesque ultricies libero at sodales vulputate. Maecenas eget nibh ex. Morbi aliquam vel purus ut vulputate. In placerat, arcu at suscipit fermentum, ligula arcu cursus arcu, quis elementum tortor nisl sed est. Sed dolor quam, tincidunt varius tellus in, mattis ultrices velit. Vestibulum consectetur nibh sed sem feugiat commodo.
-
-Fusce finibus sem non sapien ultricies egestas. Curabitur sed nibh non justo placerat auctor vitae non mauris. Nunc aliquam non nisi in maximus. Proin in purus et lorem fermentum egestas aliquet a neque. Nam rutrum sodales sapien eu ornare. Quisque nunc urna, molestie a lacus sed, mattis dapibus metus. Proin sollicitudin odio in pretium convallis. Quisque ultrices cursus est ac tempor.
-
-In elementum, ex et efficitur ullamcorper, mi felis scelerisque massa, vitae dapibus nulla neque a enim. Nam eu tincidunt massa, porta luctus est. Morbi eu ante id nulla pretium maximus blandit non nibh. Etiam volutpat pretium quam, ac mattis diam mollis sit amet. In nec tincidunt lectus, nec dictum orci. Quisque dolor sapien, consequat in sapien non, semper venenatis mi. Sed sit amet lacus condimentum, malesuada ligula a, facilisis odio. Nulla non tortor tincidunt, bibendum tortor a, vehicula orci. Quisque eget molestie nulla, ac condimentum velit. Aliquam imperdiet metus id urna consectetur maximus. Nulla dapibus nunc dolor, vitae scelerisque mi vulputate vitae. Curabitur nec lectus nec augue laoreet vulputate ut in sapien. Aenean eu urna in nunc malesuada venenatis sed at arcu.
-
-Proin accumsan justo ligula, a consectetur risus pharetra nec. Nulla scelerisque non turpis in efficitur. Integer porta, ipsum sit amet sodales vulputate, odio ipsum tempor urna, vel tincidunt metus leo et metus. Aliquam posuere ante id ante pharetra, ut dignissim augue finibus. Fusce malesuada lorem eget nisi tempus, nec tincidunt eros euismod. Vivamus pulvinar bibendum purus quis commodo. Curabitur mattis malesuada purus et euismod. Vivamus viverra ultrices lorem a imperdiet. Nullam condimentum est nec libero imperdiet laoreet. Nam non risus massa. Nam eros orci, bibendum ac pharetra a, semper eu enim. Donec est mauris, pulvinar quis cursus quis, pharetra at odio. Praesent luctus enim urna, nec lacinia tortor mollis sed.
-
-
-</h2>
+        {/* <Typography sx={{color:sections[4].color}} variant='h3'>{sections[4].text}</Typography> */}
+          
         </section>
       </Box>
     </Box>
