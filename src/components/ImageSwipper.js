@@ -79,7 +79,7 @@ function ImageSwipper() {
           </div>
         ))}
       </SwipeableViews>
-      <Typography>{images[activeStep].label}</Typography>
+      <Typography sx={{pt:2}}>{images[activeStep].label}</Typography>
       <MobileStepper
         steps={maxSteps}
         position="static"

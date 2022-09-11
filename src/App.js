@@ -5,6 +5,7 @@ import * as React from 'react';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import Box from '@mui/material/Box';
+import Contact from './components/Contact';
 import CssBaseline from '@mui/material/CssBaseline';
 import Education from './components/Education';
 import Experience from './components/Experience';
@@ -94,8 +95,7 @@ function App(props) {
           <Education></Education>
         </section>
         <section id={sections[4].id} ref={sectionRefs.current[4]}>
-        {/* <Typography sx={{color:sections[4].color}} variant='h3'>{sections[4].text}</Typography> */}
-          
+        <Contact></Contact>
         </section>
       </Box>
     </Box>

@@ -11,7 +11,7 @@ function Home() {
       <div className="Home">
 
   <Grid container spacing={2} sx={{
-        height: "90vh",
+        height: "95vh",
         backgroundColor: 'inherit',
         alignItems:"center"
       }}>
