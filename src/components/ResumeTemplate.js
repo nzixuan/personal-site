@@ -39,7 +39,7 @@ function ResumeTemplate(props) {
         <Typography sx={{fontSize:"1.25rem", fontWeight:"bold", pb:2, textAlign:"right", whiteSpace:"pre-line"}}>
             {"\n"+source.dateRange}
         </Typography>
-        <Typography sx={{fontSize:"1.1rem", whiteSpace:"pre-line", textAlign:"justify"}}>
+        <Typography sx={{fontSize:"1.2rem", whiteSpace:"pre-line", textAlign:"justify"}}>
             {source.summary}
         </Typography>
           </Grid>

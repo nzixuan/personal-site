@@ -33,7 +33,7 @@ function App(props) {
   };
   // 282c34
   // const bcolour ="#202124"
-  const bcolour ="#202124"
+  const bcolour ="#151515"
 
   const theme = createTheme({
     palette: {

@@ -10,7 +10,6 @@ import { Typography } from '@mui/material';
 
 function ProjectTemplate(props) {
     const source = props.source 
-    console.log(source.link.text)
     return(
         <Card variant="" sx={{
             borderColor: "#DCDCDC",
@@ -22,13 +21,13 @@ function ProjectTemplate(props) {
         backgroundColor: 'inherit',
         alignItems:"center", 
       }}>
-        <Grid item xs={12} md={5}>
-        <ImageSwipper></ImageSwipper>
+        <Grid item xs={12} md={6}>
+        <ImageSwipper images={source.photos}></ImageSwipper>
           </Grid>
           <Grid item xs={0} md={1} sx={{alignItems:"center"}}>
           </Grid>
-        <Grid item xs={12} md={6} sx={{alignItems:"center"}}>
-        <Typography sx={{fontSize:"1.25rem", fontWeight:"bold", pb:2, textAlign:"left", whiteSpace:"pre-line",textDecoration:"underline",
+        <Grid item xs={12} md={4} sx={{alignItems:"center"}}>
+        <Typography sx={{fontSize:"1.25rem", fontWeight:"bold", pb:2, textAlign:"left", whiteSpace:"pre-line",
          color:"#60B1EC"}}>
             {source.title}
         </Typography>

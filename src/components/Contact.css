@@ -4,3 +4,29 @@
         text-decoration: none;
         color: #0A65C2;
     }  
+
+    .contact-text {
+        font-size: 1.5rem;
+    }
+
+    .c-project-link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #38BF8F;
+    }
+    .c-experience-link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #F5D26A;
+    }
+    
+    .c-link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #60B1EC;
+    }
+    .c-contact {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #ED983B;
+    }

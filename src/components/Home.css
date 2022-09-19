@@ -1,25 +1,39 @@
 .about-text {
-font-size: x-large;
+font-size: 1.3rem;
+text-align: left;
 }
 
+
+
 .project-link {
-    font-size: x-large;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #38BF8F;
 }
 .experience-link {
-    font-size: x-large;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #F5D26A;
 }
 
 .link {
-    font-size: x-large;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #60B1EC;
 }
 .contact {
-    font-size: x-large;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #ED983B;
+}
+.education-link{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #E98E99;
+}
+
+.home-link{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #60B1EC;
 }

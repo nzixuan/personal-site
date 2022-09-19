@@ -12,12 +12,13 @@ function Projects() {
         alignItems:"center", 
         justifyContent:"center",
         pl: 4,
-        pr:4
+        pr:4,
       }}>
     {projects.map((project, i) => <Grid item key={i+"p"} xs={12} md={11} sx={{
         alignItems:"center", 
         justifyContent:"center",
-        pl:0
+        pl:0,
+        pb: 10,
       }}> <ProjectTemplate  source={project}></ProjectTemplate></Grid>)}
          </Grid>)
 }
