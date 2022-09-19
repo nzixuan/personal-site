@@ -16,7 +16,7 @@ export const projects = [
     {label: "Some hints are hidden in the source code!", imgPath: "/static/projects/orientation/Source.png"}],
     title: "NUS SoC eFOP Online Escape Room",
     summary: "An online Escape Room experience with the goal of breaking in freshman to School of Computing (SoC) and to promote team bonding within the orientation group."+
-    "\n\nThe escape room is filled with puzzles that involve logical reasoning, technical skills and even looking into hidden aspects of the site, such as the address bar and source code."+
+    "\n\nThe escape room is filled with puzzles that involve logical reasoning and technical skills, requiring participants to investigate hidden aspects of the site, such as the address bar and source code, for clues to proceed."+
     "\n\nTech Stack: HTML CSS",
    link: {text: "Link to escape room site", link:"https://escaperoom-silk.vercel.app/"}},
 
@@ -26,7 +26,7 @@ export const projects = [
     {label: "Tagging route and gym details", imgPath: "/static/projects/orbital/Tagging.png"}],
     title: "Allez",
     summary: "Allez is a climbing social media platform for climbers to post solutions to climbing routes to share their accomplishments with their friends."+
-    "\n\nAllez allows climbers to easily search up solutions for routes climbers are unable to solve themselves by allowing them to search for a post by their gym tagged."+
+    "\n\It allows climbers to easily find solutions for routes that they are unable to solve by themselves by searching for other climbers' posts tagged to the bouldering gym that they are at."+
     "\n\nTech Stack: Mongol DB, Express, React, Node.js",
     link: {text: "Link to github repo", link:"https://github.com/nzixuan/allez"}},
 
