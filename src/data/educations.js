@@ -4,7 +4,7 @@ export const educations = [
         companyName: "Bachelor of Computing (Honours) in Computer Science",
         title: "National University of Singapore",
         dateRange:"Aug 2020 - Present",
-        summary: "•	Expected Data of Graduation: May 2024\n •	Current CAP: 4.73/5"
+        summary: "•	Expected Data of Graduation: Jan 2025\n •	Current CAP: 4.72/5"
     },
     {
         photo: "/static/education/NUSHS_Logo.jpeg",

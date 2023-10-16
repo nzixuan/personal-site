@@ -29,7 +29,7 @@ function Home() {
       </a>.
       <br></br>
       <br></br>
-      Right now, I am learning more about software engineering and its applications to fields in healthtech and fintech. I am also
+      Right now, I am learning more about software engineering and its applications to finance. I am also
       dabbling with machine learning and artificial intelligence.
       <br></br>
       <br></br>
